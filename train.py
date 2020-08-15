@@ -10,7 +10,6 @@ import torch
 import numpy as np
 from Loss import CtdetLoss
 from torch.utils.data import DataLoader
-from visualize import Visualizer
 from dataset import ctDataset
 
 sys.path.append(r'./backbone')
@@ -57,7 +56,7 @@ print('the dataset has %d images' % (len(train_dataset)))
 num_iter = 0
 
 best_test_loss = np.inf 
-vis = Visualizer(env='base')
+
 for epoch in range(num_epochs):
     model.train()
     if epoch == 90:
@@ -82,7 +81,7 @@ for epoch in range(num_epochs):
             print ('Epoch [%d/%d], Iter [%d/%d] Loss: %.4f, average_loss: %.4f' 
             %(epoch+1, num_epochs, i+1, len(train_loader), loss.data, total_loss / (i+1)))
             num_iter += 1
-            vis.plot_train_val(loss_train=total_loss/(i+1))
+            
 
     #validation
     validation_loss = 0.0
@@ -96,7 +95,7 @@ for epoch in range(num_epochs):
         loss = criterion(pred, sample)   
         validation_loss += loss.item()
     validation_loss /= len(test_loader)
-    vis.plot_train_val(loss_val=validation_loss)
+    
     
     if best_test_loss > validation_loss:
         best_test_loss = validation_loss
