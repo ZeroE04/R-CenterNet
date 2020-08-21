@@ -1,0 +1,28 @@
+<annotation>
+	<folder>img</folder>
+	<filename>001.jpg</filename>
+	<path>F:\CV\毕业设计\打标签\img\001.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>958</width>
+		<height>808</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>aircraft</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<robndbox>
+			<cx>602.1491</cx>
+			<cy>523.8509</cy>
+			<w>93.0</w>
+			<h>105.0</h>
+			<angle>0.54</angle>
+		</robndbox>
+		<extra/>
+	</object>
+</annotation>
