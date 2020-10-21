@@ -204,4 +204,4 @@ class PascalVOC2coco(object):
 xml_file = glob.glob('./Annotations/*.xml')
 # xml_file=['./Annotations/000032.xml']
 #xml_file=['00000007_05499_d_0000037.xml']
-PascalVOC2coco(xml_file, './label_R-CenterNet/train.json')
+PascalVOC2coco(xml_file, 'train.json')
