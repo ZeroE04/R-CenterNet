@@ -23,7 +23,7 @@
  ~~~
  2.0以及data/airplane、imgs、ret文件夹都不是必须的，如果您只是想快速上手，1.0足够了。
  
-### demo
+#### demo
 * R-DLADCN(推荐)(DCN编译与原版[CenterNet](https://github.com/xingyizhou/centernet)保持一致)
     * ![image](ret/R-DLADCN.jpg)
 * R-ResDCN(主干网用的ResNet而不是DLA)
@@ -43,7 +43,7 @@
  * 修改代码中所有num_classes为你的类别数目，并且修改back_bone中hm的数目为你的类别数，如：
    def DlaNet(num_layers=34, heads = {'hm': your classes num, 'wh': 2, 'ang':1, 'reg': 2}, head_conv=256, plot=False):
 
-### Related projects
+#### Related projects
 * [CenterNet](https://github.com/xingyizhou/centernet)
 
 
@@ -73,7 +73,7 @@ At the request of readers, 2.0 was subsequently updated：2.0
  ~~~
  2.0 and the data/airplane, imgs, ret folders are not required. If you just want to get started quickly, 1.0 is enough。
 
-### demo
+#### demo
 * R-DLADCN(this code)(How to complie dcn refer to the original code of [CenterNet](https://github.com/xingyizhou/centernet))
     * ![image](ret/R-DLADCN.jpg)
 * R-ResDCN(just replace cnn in resnet with dcn)
@@ -93,5 +93,5 @@ At the request of readers, 2.0 was subsequently updated：2.0
  * modify all num_classes to your classes num, and modify the num of hm in your back_bone, such as:
    def DlaNet(num_layers=34, heads = {'hm': your classes num, 'wh': 2, 'ang':1, 'reg': 2}, head_conv=256, plot=False):
 
-### Related projects
+#### Related projects
 * [CenterNet](https://github.com/xingyizhou/centernet)
