@@ -1,6 +1,28 @@
-# R-CenterNet(中文)
+# R-CenterNet(中文)<English readme is below>
 基于CenterNet的旋转目标检测
 
+### 前言
+本工作初衷是提供一个**极其精简**的CenterNet代码，并对旋转目标进行检测，1.0为：
+ ~~~
+  ${R-CenterNet_ROOT}
+  |-- backbone
+  `-- |-- dlanet.py
+      |-- dlanet_dcn.py
+  |-- Loss.py
+  |-- dataset.py
+  |-- train.py
+  |-- predict.py
+ ~~~
+应读者需求，随后更新了2.0
+ ~~~
+  ${R-CenterNet_ROOT}
+  |-- labelGenerator
+  `-- |-- Annotations
+      |-- voc2coco.py
+  |-- evaluation.py
+ ~~~
+ 2.0以及data/airplane、imgs、ret文件夹都不是必须的，如果您只是想快速上手，1.0足够了。
+ 
 ### demo
 * R-DLADCN(推荐)(DCN编译与原版[CenterNet](https://github.com/xingyizhou/centernet)保持一致)
     * ![image](ret/R-DLADCN.jpg)
@@ -25,8 +47,31 @@
 * [CenterNet](https://github.com/xingyizhou/centernet)
 
 
+
 # R-CenterNet(English)
-detector for rotated-objections based on CenterNet/基于CenterNet的旋转目标检测
+detector for rotated-objections based on CenterNet
+
+### preface
+The original intention of this work is to provide a **extremely compact** code of CenterNet and detect rotating targets: 1.0
+ ~~~
+  ${R-CenterNet_ROOT}
+  |-- backbone
+  `-- |-- dlanet.py
+      |-- dlanet_dcn.py
+  |-- Loss.py
+  |-- dataset.py
+  |-- train.py
+  |-- predict.py
+ ~~~
+At the request of readers, 2.0 was subsequently updated：2.0
+ ~~~
+  ${R-CenterNet_ROOT}
+  |-- labelGenerator
+  `-- |-- Annotations
+      |-- voc2coco.py
+  |-- evaluation.py
+ ~~~
+ 2.0 and the data/airplane, imgs, ret folders are not required. If you just want to get started quickly, 1.0 is enough。
 
 ### demo
 * R-DLADCN(this code)(How to complie dcn refer to the original code of [CenterNet](https://github.com/xingyizhou/centernet))
