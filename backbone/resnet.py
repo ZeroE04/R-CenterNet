@@ -204,11 +204,9 @@ resnet_spec = {18: (BasicBlock, [2, 2, 2, 2]),
                152: (Bottleneck, [3, 8, 36, 3])}
 
 
-def ResNet(layer_num, heads = {'hm': 1, 'wh': 2, 'reg': 2}, head_conv=256, plot=False):
+def ResNet(layer_num, heads = {'hm': 1, 'wh': 2, 'ang':1, 'reg': 2}, head_conv=256, plot=False):
     assert layer_num in [18,34,50,101,152], \
             'ERROR: layer_num must be in [18,34,50,101,152]'
     block_class, layers = resnet_spec[layer_num]
     model = Creat_ResNet(block_class, layers, heads, head_conv=head_conv, plot=plot)
     return model
-
-
