@@ -49,7 +49,7 @@
 
 
 # R-CenterNet(English)
-detector for rotated-objections based on CenterNet
+detector for rotated-object based on CenterNet
 
 ### preface
 The original intention of this work is to provide a **extremely compact** code of CenterNet and detect rotating targets: 1.0
