@@ -71,7 +71,7 @@ def draw(filename,result):
 def pre_process(image):
     height, width = image.shape[0:2]
     inp_height, inp_width = 512, 512
-    c = np.array([height / 2., width / 2.], dtype=np.float32)
+    c = np.array([width / 2.,  height / 2.], dtype=np.float32)
     s = max(height, width) * 1.0
     trans_input = get_affine_transform(c, s, 0, [inp_width, inp_height])
     inp_image = cv2.warpAffine(image, trans_input, (inp_width, inp_height),flags=cv2.INTER_LINEAR)
