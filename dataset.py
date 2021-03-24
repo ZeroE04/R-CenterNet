@@ -219,7 +219,7 @@ def draw_umich_gaussian(heatmap, center, radius, k=1):
     return heatmap
     
 def coco_box_to_bbox(box):
-    bbox = np.array([box[0] - box[2]/2, box[1] - box[3]/2, box[0] + box[2]/2, box[1] + box[3]/2],dtype=np.float32)
+    bbox = np.array([box[0], box[1], box[0] + box[2], box[1] + box[3]],dtype=np.float32)
     ang = float(box[4])
     return bbox, ang
 
